@@ -94,25 +94,27 @@ export default defineComponent({
         });
     },
     addTask() {
-      this.tasks.push({
-        title: this.newTask,
-        done: false,
-      });
-      this.newTask = "";
+      if (this.newTask != "") {
+        this.tasks.push({
+          title: this.newTask,
+          done: false,
+        });
+        this.newTask = "";
+      }
     },
   },
   mounted() {
-    console.log('TODO :: mounted');
+    console.log("TODO :: mounted");
   },
   unmounted() {
-    console.log('TODO :: unmounted');
+    console.log("TODO :: unmounted");
   },
   activated() {
-    console.log('TODO :: activated');
+    console.log("TODO :: activated");
   },
   deactivated() {
-    console.log('TODO :: deactivated');
-  }
+    console.log("TODO :: deactivated");
+  },
 });
 </script>
 
