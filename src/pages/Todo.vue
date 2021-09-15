@@ -58,7 +58,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "PageIndex",
+  name: "Todo",
   data() {
     return {
       newTask: "",
@@ -101,6 +101,18 @@ export default defineComponent({
       this.newTask = "";
     },
   },
+  mounted() {
+    console.log('TODO :: mounted');
+  },
+  unmounted() {
+    console.log('TODO :: unmounted');
+  },
+  activated() {
+    console.log('TODO :: activated');
+  },
+  deactivated() {
+    console.log('TODO :: deactivated');
+  }
 });
 </script>
 
