@@ -32,7 +32,7 @@
         "
       >
         <q-list padding>
-          <q-item clickable v-ripple>
+          <q-item clickable v-ripple to="/" exact>
             <q-item-section avatar>
               <q-icon name="list" />
             </q-item-section>
@@ -40,7 +40,7 @@
             <q-item-section> Todo </q-item-section>
           </q-item>
 
-          <q-item clickable v-ripple>
+          <q-item clickable v-ripple to="/help" exact>
             <q-item-section avatar>
               <q-icon name="help" />
             </q-item-section>
